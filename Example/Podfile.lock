@@ -1,5 +1,5 @@
 PODS:
-  - DDProgressIndicator (0.1.0)
+  - DDProgressIndicator (1.0.0)
 
 DEPENDENCIES:
   - DDProgressIndicator (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DDProgressIndicator: 88903b2bd500ed5d6ddacd54e7ce40cd2b7a022f
+  DDProgressIndicator: 3bcd0d31713977fffa8783dd92c8ba1b3fbd1119
 
 PODFILE CHECKSUM: 8fe6d80f89d8386f9f0588c92fde8ed5f4839d07
 
