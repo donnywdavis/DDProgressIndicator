@@ -11,8 +11,6 @@ DDProgressIndicator is a simple class that can be used to display an activity in
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
 DDProgressIndicator is available through [CocoaPods](http://cocoapods.org). To install
@@ -24,9 +22,11 @@ pod "DDProgressIndicator"
 
 ## Usage
 
-Make sure that your view controller conforms to the `DDProgressIndicatorDelegate` protocol.
+Import `DDProgressIndicator` and make sure that your view controller conforms to the `DDProgressIndicatorDelegate` protocol.
 
 ```swift
+import DDProgressIndicator
+
 class ViewController: UIViewController, DDProgressIndicatorDelegate {
     ...
 }
@@ -48,6 +48,26 @@ There are two main methods to call to start and stop the activity indicator. Cal
 ddProgressStartActivity()
 ```
 
-```swfit
+```swift
 ddProgressStopActivity()
+```
+
+There are three optional methods that can be used to modify the color for the activity spinner, the loading label, and the background.
+
+```swift
+func ddProgressIndicatorSetSpinnerColor() -> UIColor? {
+    return UIColor.blueColor()
+}
+```
+
+```swift
+func ddProgressIndicatorSetLabelColor() -> UIColor? {
+    return UIColor.blueColor()
+}
+```
+
+```swift
+func ddProgressIndicatorSetBackgroundColor() -> UIColor? {
+    return UIColor.redColor()
+}
 ```
